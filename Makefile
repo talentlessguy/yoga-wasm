@@ -18,6 +18,7 @@ cpp: dir
 		-s ASSERTIONS=0 \
 		-s ALLOW_MEMORY_GROWTH=1 \
 		-s MODULARIZE=1 \
+		-s ERROR_ON_UNDEFINED_SYMBOLS=0 \
 		-s "DEFAULT_LIBRARY_FUNCS_TO_INCLUDE=['memcpy','memset','malloc','free','strlen']" \
 		-o build/$(OUTPUT_FILENAME)
 
